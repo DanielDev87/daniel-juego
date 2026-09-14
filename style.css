@@ -22,3 +22,73 @@ body {
     box-shadow:  o 20px 30px grey;
     border: 2px solid blue;
 }
+
+canvas {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 400/500;
+    background: black;
+    border-radius: 1.2rem;
+    margin: 0 auto;
+    box-shadow: inset 0 0 20px gray;
+    image-rendering: pixelated;
+    touch-action: none;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 6px 4px 6px;
+    color: burlywood;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    text-shadow: 0 0 6px;
+    letter-spacing: 1px;
+}
+
+.score span{
+    color: blueviolet;
+    font-size: 1.8rem;
+    margin-left: 6px;
+}
+
+button {
+    background: blue;
+    border: none;
+    color: azure;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    border-radius: 100px;
+    box-shadow: 0 5px 0 black;
+    transition: all;
+    letter-spacing: 1px;
+    touch-action: manipulation;
+    border: 1px solid yellow;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 3px 0 red;
+}
+
+.controls-note{
+    color: aqua;
+    font-size: medium;
+    margin: 6px 6px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px){
+    .game-wrapper{padding: 0.5rem;}
+    .info {font-size: 1rem;}
+    .score span {font-size: 1.5rem;}
+    button { font-size: 1rem; padding: 6px 16px;}
+}
