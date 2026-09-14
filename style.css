@@ -1,0 +1,24 @@
+* {
+    margin: 20;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: turquoise;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    touch-action: none;
+}
+
+.game-wrapper{
+    background: violet;
+    padding: 1rem 1rem 1.5rem;
+    border-radius: 2rem;
+    box-shadow:  o 20px 30px grey;
+    border: 2px solid blue;
+}
