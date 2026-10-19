@@ -1,37 +1,27 @@
-# Juego web y movil
+# Juego de Daniel
 
-Escribe **negrita**, *cursiva* o [enlaces](https://markdown.es) sin tocar un solo boton.
+Juego arcade de naves hecho con HTML, CSS y JavaScript. No necesita instalar dependencias ni tener conexión a internet.
 
-## tecnologías a implementar
+## Cómo iniciar
 
-- Editor Visual Studio Code
-- GitHub para versionar
-- HTML5 para el maquetado
-- CSS3 para los estilos
-- JavaScript como lenguaje de programación
-1. Numerada
-2. Y sigue
+1. Abre la carpeta del proyecto.
+2. Abre `index.html` en un navegador moderno.
+3. También puedes abrir la carpeta en Visual Studio Code y ejecutar `index.html` con una extensión como Live Server.
 
-## Tarea pendiente
+## Como jugar
 
-- [x] Aprender la sintaxis
-- [ ] Convertir a PDF
+- **Mover la nave:** usa las flechas izquierda y derecha del teclado.
+- **En móvil o pantalla táctil:** toca o mantén el dedo en el lado izquierdo o derecho de la nave para moverla en esa dirección.
+- **Disparar:** la nave dispara automáticamente.
+- **Sonido:** pulsa el botón del altavoz para activar o silenciar los efectos.
+- **Reiniciar:** pulsa **REINICIAR** para volver al nivel 1 y poner la puntuación en cero.
 
-## Codigo
+Destruye a todos los enemigos de cada oleada para avanzar. Los enemigos laterales se mueven en diagonal. Hay 10 niveles; la cantidad y velocidad de los enemigos aumenta progresivamente. Si un enemigo alcanza la nave o baja hasta su altura, termina la partida.
 
-```javascript
-const saludo = () => console.log("Hola Markdown");
-```
+Cada enemigo eliminado suma 10 puntos. Al completar el nivel 10, ganas la partida.
 
-## Tabla
+## Archivos
 
-| App | Plataforma | Precio |
-|-----|-----------|--------|
-| Obsidian | Multi | Gratis |
-| Typora | Multi | 14,99 $ |
-
-> Lo simple es lo que mejor envejece.
-
----
-
-Prueba a editar este texto y mira como cambia el resultado.
+- `index.html`: estructura de la página y controles.
+- `style.css`: estilos y presentación adaptable.
+- `script.js`: movimiento, enemigos, puntuación, niveles y sonidos.
