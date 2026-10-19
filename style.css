@@ -39,7 +39,8 @@ canvas {
 
 .info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
     align-items: center;
     margin: 4px 6px 4px 6px;
     color: burlywood;
@@ -50,10 +51,27 @@ canvas {
     letter-spacing: 1px;
 }
 
-.score span{
+.score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.score > span#scoreDisplay {
     color: blueviolet;
     font-size: 1.8rem;
-    margin-left: 6px;
+}
+
+.score > .level-label {
+    color: burlywood;
+    font-size: 0.9rem;
+}
+
+.level-label span {
+    color: blueviolet;
+    font-size: 1.1rem;
 }
 
 button {
@@ -77,6 +95,11 @@ button:active {
     box-shadow: 0 3px 0 red;
 }
 
+#soundBtn {
+    min-width: 42px;
+    padding: 8px;
+}
+
 .controls-note{
     color: aqua;
     font-size: medium;
@@ -89,6 +112,6 @@ button:active {
 @media (max-width: 500px){
     .game-wrapper{padding: 0.5rem;}
     .info {font-size: 1rem;}
-    .score span {font-size: 1.5rem;}
+    .score > span#scoreDisplay {font-size: 1.5rem;}
     button { font-size: 1rem; padding: 6px 16px;}
 }
